@@ -176,8 +176,8 @@ Terrain:
   m_Enabled: 1
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: c666a1c635509469fb88a56725447577, type: 2}
-  m_TreeDistance: 500
-  m_TreeBillboardDistance: 300
+  m_TreeDistance: 200
+  m_TreeBillboardDistance: 200
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
@@ -191,7 +191,7 @@ Terrain:
   m_DrawTreesAndFoliage: 1
   m_ReflectionProbeUsage: 1
   m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
-  m_BakeLightProbesForTrees: 0
+  m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 1
   m_DeringLightProbesForTrees: 1
   m_ScaleInLightmap: 0.8
@@ -199,6 +199,63 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!1001 &231401894
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 126326, guid: 3039651ccbe95a249a8d0d642e65d727, type: 3}
+      propertyPath: m_Name
+      value: LightHouse_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 438278, guid: 3039651ccbe95a249a8d0d642e65d727, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 438278, guid: 3039651ccbe95a249a8d0d642e65d727, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 411.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 438278, guid: 3039651ccbe95a249a8d0d642e65d727, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 438278, guid: 3039651ccbe95a249a8d0d642e65d727, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 446.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 438278, guid: 3039651ccbe95a249a8d0d642e65d727, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.42261827
+      objectReference: {fileID: 0}
+    - target: {fileID: 438278, guid: 3039651ccbe95a249a8d0d642e65d727, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 438278, guid: 3039651ccbe95a249a8d0d642e65d727, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9063079
+      objectReference: {fileID: 0}
+    - target: {fileID: 438278, guid: 3039651ccbe95a249a8d0d642e65d727, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 438278, guid: 3039651ccbe95a249a8d0d642e65d727, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 438278, guid: 3039651ccbe95a249a8d0d642e65d727, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -130
+      objectReference: {fileID: 0}
+    - target: {fileID: 438278, guid: 3039651ccbe95a249a8d0d642e65d727, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3039651ccbe95a249a8d0d642e65d727, type: 3}
 --- !u!1 &305187497
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,176 +347,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &335853846
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 335853848}
-  - component: {fileID: 335853847}
-  m_Layer: 0
-  m_Name: Vegetation Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &335853847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335853846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f710250abab6f24a954bdf3c3c1ac64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seed: 0
-  terrains:
-  - {fileID: 131541582}
-  treeTypes:
-  - enabled: 1
-    name: VegetationItem
-    seed: 0
-    probability: 10
-    collisionCheck: 0
-    rejectUnderwater: 0
-    heightRange: {x: 0, y: 1000}
-    slopeRange: {x: 0, y: 60}
-    curvatureRange: {x: 0, y: 1}
-    layerMasks: []
-    instanceCount: 599
-    prefabs:
-    - index: 0
-      probability: 100
-      prefab: {fileID: 0}
-    distance: 5
-    scaleRange: {x: 0.8, y: 1.2}
-    sinkAmount: 0
-  grassPrefabs:
-  - enabled: 1
-    name: Grass 1
-    seed: 88557
-    probability: 44.2
-    collisionCheck: 1
-    rejectUnderwater: 0
-    heightRange: {x: 0, y: 223.77625}
-    slopeRange: {x: 0, y: 53.076923}
-    curvatureRange: {x: 0, y: 1}
-    layerMasks:
-    - name: Grass_A_TerrainLayer
-      layerID: 4
-      threshold: 0
-    instanceCount: 342585
-    index: 0
-    type: 1
-    renderAsBillboard: 1
-    prefab: {fileID: 0}
-    billboard: {fileID: 2800000, guid: db18f1e4d61f8cc439e35dfd023b6d3e, type: 3}
-    mainColor: {r: 0.06011924, g: 0.066037714, b: 0.061302934, a: 1}
-    secondaryColor: {r: 0.24122678, g: 0.2735849, b: 0.23874155, a: 1}
-    linkColors: 0
-    minMaxHeight: {x: 0.44405586, y: 0.7552448}
-    minMaxWidth: {x: 0.8, y: 1.1188812}
-    noiseSize: 6
-  - enabled: 1
-    name: Grass_Small_A
-    seed: 5120
-    probability: 87.6
-    collisionCheck: 1
-    rejectUnderwater: 0
-    heightRange: {x: 0, y: 293.70633}
-    slopeRange: {x: 0, y: 60}
-    curvatureRange: {x: 0, y: 1}
-    layerMasks:
-    - name: Grass_A_TerrainLayer
-      layerID: 4
-      threshold: 0
-    instanceCount: 691095
-    index: 1
-    type: 0
-    renderAsBillboard: 0
-    prefab: {fileID: 103420, guid: 883e84064e0818d46b851b53952056f7, type: 3}
-    billboard: {fileID: 0}
-    mainColor: {r: 0, g: 0, b: 0, a: 1}
-    secondaryColor: {r: 0.05660379, g: 0.049925003, b: 0.04886082, a: 1}
-    linkColors: 0
-    minMaxHeight: {x: 0.5, y: 0.7902098}
-    minMaxWidth: {x: 0.73706293, y: 1.1160839}
-    noiseSize: 10
-  - enabled: 1
-    name: Grass_Med_B
-    seed: 9582
-    probability: 44.2
-    collisionCheck: 0
-    rejectUnderwater: 0
-    heightRange: {x: 0, y: 188.81122}
-    slopeRange: {x: 0, y: 60}
-    curvatureRange: {x: 0, y: 1}
-    layerMasks:
-    - name: Grass_A_TerrainLayer
-      layerID: 4
-      threshold: 0
-    instanceCount: 351263
-    index: 2
-    type: 0
-    renderAsBillboard: 0
-    prefab: {fileID: 103420, guid: 883e84064e0818d46b851b53952056f7, type: 3}
-    billboard: {fileID: 0}
-    mainColor: {r: 0.13207549, g: 0.11525455, b: 0.11525455, a: 1}
-    secondaryColor: {r: 0, g: 0, b: 0, a: 1}
-    linkColors: 0
-    minMaxHeight: {x: 0.5, y: 1}
-    minMaxWidth: {x: 0.59020984, y: 1.2}
-    noiseSize: 5
-  terrainSettings:
-    drawTreesAndFoliage: 1
-    perservePrefabLayer: 1
-    treeLightProbes: 0
-    treeDistance: 500
-    billboardStart: 300
-    maxMeshTrees: 50
-    grassDistance: 80
-    grassDensity: 1
-    windStrength: 0.15
-    windSpeed: 1
-    windFrequency: 2
-    wintTint: {r: 1, g: 1, b: 1, a: 1}
-  cellSize: 64
-  cellDivisions: 4
-  highPrecisionCollision: 1
-  collisionLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  autoRespawnTrees: 1
-  terrainMinMaxHeight: {x: -0.0001, y: 0.0002}
-  detailResolution: 1024
-  detailResolutionIndex: 3
-  grassPatchSize: 32
-  grassPatchSizeIndex: 2
-  tempColliders: []
-  waterHeight: 0
---- !u!4 &335853848
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335853846}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1313.5739, y: -9.126221, z: 1370.3591}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &819379790
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +468,7 @@ Transform:
   m_Children:
   - {fileID: 819379791}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1814670030
 GameObject:
@@ -624,7 +513,7 @@ Transform:
   m_Children:
   - {fileID: 131541580}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1843947642
 PrefabInstance:
@@ -744,3 +633,88 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
+--- !u!1001 &8671615362161478620
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8671615362496737988, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737988, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1313.5739
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737988, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.126221
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737988, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1370.3591
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737988, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737988, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737988, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737988, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737988, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737988, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737988, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737994, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: m_Name
+      value: Vegetation Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737995, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: terrains.Array.data[0]
+      value: 
+      objectReference: {fileID: 131541582}
+    - target: {fileID: 8671615362496737995, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: treeTypes.Array.data[0].enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737995, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: treeTypes.Array.data[1].enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737995, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: treeTypes.Array.data[2].enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737995, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: treeTypes.Array.data[0].instanceCount
+      value: 932
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737995, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: treeTypes.Array.data[1].instanceCount
+      value: 88
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671615362496737995, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}
+      propertyPath: treeTypes.Array.data[2].instanceCount
+      value: 329
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c36cd353990c4eaa899af63910a6d45, type: 3}

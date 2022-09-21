@@ -1,0 +1,284 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8671615362496737994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8671615362496737988}
+  - component: {fileID: 8671615362496737995}
+  m_Layer: 0
+  m_Name: Vegetation Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8671615362496737988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8671615362496737994}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1313.5739, y: -9.126221, z: 1370.3591}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8671615362496737995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8671615362496737994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f710250abab6f24a954bdf3c3c1ac64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seed: 0
+  terrains:
+  - {fileID: 0}
+  treeTypes:
+  - enabled: 0
+    name: TreeCreator_Bush_A
+    seed: 45124
+    probability: 50
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: 0, y: 60}
+    slopeRange: {x: 0, y: 100}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks:
+    - name: Grass_A_TerrainLayer
+      layerID: 4
+      threshold: 0.273
+    instanceCount: 0
+    prefabs:
+    - index: 0
+      probability: 50
+      prefab: {fileID: 196434, guid: 2c33c759b6bfb1448a79429a0c761b44, type: 3}
+    - index: 1
+      probability: 100
+      prefab: {fileID: 110614, guid: 51ea3179b0b8c264f904d1f2b41994d4, type: 3}
+    distance: 5
+    scaleRange: {x: 0.8, y: 1.2}
+    sinkAmount: 0
+  - enabled: 0
+    name: TreeCreator_Crinkly_A
+    seed: 36258
+    probability: 30
+    collisionCheck: 1
+    rejectUnderwater: 1
+    heightRange: {x: 0, y: 10}
+    slopeRange: {x: 0, y: 80}
+    curvatureRange: {x: 0, y: 0.8}
+    layerMasks:
+    - name: Grass_A_TerrainLayer
+      layerID: 4
+      threshold: 0.216
+    instanceCount: 0
+    prefabs:
+    - index: 2
+      probability: 93.3
+      prefab: {fileID: 196434, guid: cfe0412d7fa12f243b181e3f547a2294, type: 3}
+    - index: 3
+      probability: 82.1
+      prefab: {fileID: 196434, guid: bf68be3621a129c48b56c6ffde6f3f7f, type: 3}
+    - index: 4
+      probability: 73.2
+      prefab: {fileID: 196434, guid: 1a7d988da17e44741aabfb0c94a2035b, type: 3}
+    - index: 5
+      probability: 94.8
+      prefab: {fileID: 196434, guid: 76221aed845c98e4482cc2856cc7257d, type: 3}
+    distance: 10
+    scaleRange: {x: 0.8, y: 1.2}
+    sinkAmount: 0
+  - enabled: 0
+    name: TreeCreator_Tall_C
+    seed: 45124
+    probability: 20
+    collisionCheck: 1
+    rejectUnderwater: 1
+    heightRange: {x: 0, y: 30}
+    slopeRange: {x: 0, y: 100}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks:
+    - name: Grass_A_TerrainLayer
+      layerID: 4
+      threshold: 0.211
+    instanceCount: 0
+    prefabs:
+    - index: 6
+      probability: 86
+      prefab: {fileID: 196434, guid: 1833ba93709e80944b9f2627881f3f4c, type: 3}
+    - index: 7
+      probability: 100
+      prefab: {fileID: 1000010816656516, guid: ddd082fb4672f6643be6891e17a84358, type: 3}
+    - index: 8
+      probability: 20
+      prefab: {fileID: 1743353957770956, guid: f41642586885949968180791f012ee81, type: 3}
+    - index: 9
+      probability: 40
+      prefab: {fileID: 1743353957770956, guid: 539fa9bc6500e44708e0f7b2c78cbefe, type: 3}
+    - index: 10
+      probability: 100
+      prefab: {fileID: 1214657917099862, guid: abdd95d0229d64588b03d2806d9cc19a, type: 3}
+    - index: 11
+      probability: 60
+      prefab: {fileID: 1000014143113872, guid: 156f975b5c133c846bd7dd4d6c726faf, type: 3}
+    distance: 6
+    scaleRange: {x: 0.8, y: 1.5}
+    sinkAmount: 0
+  - enabled: 1
+    name: RHEF_RockDetailsB
+    seed: 0
+    probability: 40
+    collisionCheck: 1
+    rejectUnderwater: 1
+    heightRange: {x: 0, y: 20}
+    slopeRange: {x: 0, y: 60}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 465
+    prefabs:
+    - index: 12
+      probability: 100
+      prefab: {fileID: 1000014042916874, guid: db0765e6c54e2234d9644377794d9ce6, type: 3}
+    distance: 10
+    scaleRange: {x: 0.8, y: 1.2}
+    sinkAmount: 0
+  - enabled: 1
+    name: RHEF_RockMediumB_Mobile
+    seed: 44053
+    probability: 10
+    collisionCheck: 1
+    rejectUnderwater: 1
+    heightRange: {x: 0, y: 10}
+    slopeRange: {x: 0, y: 60}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks:
+    - name: Grass_A_TerrainLayer
+      layerID: 4
+      threshold: 0.194
+    instanceCount: 5
+    prefabs:
+    - index: 13
+      probability: 10
+      prefab: {fileID: 1000013974220016, guid: e2f030509428b1d4ba687efa90da19fc, type: 3}
+    - index: 14
+      probability: 19.6
+      prefab: {fileID: 1000013218097322, guid: 838aed2c0bd6e074383add6c6e347995, type: 3}
+    distance: 15
+    scaleRange: {x: 0.8, y: 1.2}
+    sinkAmount: 0
+  grassPrefabs:
+  - enabled: 1
+    name: Grass 1
+    seed: 88557
+    probability: 44.2
+    collisionCheck: 1
+    rejectUnderwater: 0
+    heightRange: {x: 0, y: 223.77625}
+    slopeRange: {x: 0, y: 53.076923}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks:
+    - name: Grass_A_TerrainLayer
+      layerID: 4
+      threshold: 0.15
+    instanceCount: 924356
+    index: 0
+    type: 1
+    renderAsBillboard: 1
+    prefab: {fileID: 0}
+    billboard: {fileID: 2800000, guid: db18f1e4d61f8cc439e35dfd023b6d3e, type: 3}
+    mainColor: {r: 0.06011924, g: 0.066037714, b: 0.061302934, a: 1}
+    secondaryColor: {r: 0.24122678, g: 0.2735849, b: 0.23874155, a: 1}
+    linkColors: 0
+    minMaxHeight: {x: 0.44405586, y: 0.7552448}
+    minMaxWidth: {x: 0.8, y: 1.1188812}
+    noiseSize: 6
+  - enabled: 1
+    name: Grass_Small_A
+    seed: 5120
+    probability: 87.6
+    collisionCheck: 1
+    rejectUnderwater: 0
+    heightRange: {x: 0, y: 293.70633}
+    slopeRange: {x: 0, y: 60}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks:
+    - name: Grass_A_TerrainLayer
+      layerID: 4
+      threshold: 0.15
+    instanceCount: 1863623
+    index: 1
+    type: 0
+    renderAsBillboard: 0
+    prefab: {fileID: 103420, guid: 883e84064e0818d46b851b53952056f7, type: 3}
+    billboard: {fileID: 0}
+    mainColor: {r: 0, g: 0, b: 0, a: 1}
+    secondaryColor: {r: 0.05660379, g: 0.049925003, b: 0.04886082, a: 1}
+    linkColors: 0
+    minMaxHeight: {x: 0.5, y: 0.7902098}
+    minMaxWidth: {x: 0.73706293, y: 1.1160839}
+    noiseSize: 10
+  - enabled: 1
+    name: Grass_Med_B
+    seed: 9582
+    probability: 44.2
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: 0, y: 188.81122}
+    slopeRange: {x: 0, y: 60}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks:
+    - name: Grass_A_TerrainLayer
+      layerID: 4
+      threshold: 0.15
+    instanceCount: 943616
+    index: 2
+    type: 0
+    renderAsBillboard: 0
+    prefab: {fileID: 103420, guid: 883e84064e0818d46b851b53952056f7, type: 3}
+    billboard: {fileID: 0}
+    mainColor: {r: 0.13207549, g: 0.11525455, b: 0.11525455, a: 1}
+    secondaryColor: {r: 0, g: 0, b: 0, a: 1}
+    linkColors: 0
+    minMaxHeight: {x: 0.5, y: 1}
+    minMaxWidth: {x: 0.59020984, y: 1.2}
+    noiseSize: 5
+  terrainSettings:
+    drawTreesAndFoliage: 1
+    perservePrefabLayer: 1
+    treeLightProbes: 1
+    treeDistance: 200
+    billboardStart: 200
+    maxMeshTrees: 50
+    grassDistance: 80
+    grassDensity: 1
+    windStrength: 0.15
+    windSpeed: 1
+    windFrequency: 2
+    wintTint: {r: 1, g: 1, b: 1, a: 1}
+  cellSize: 64
+  cellDivisions: 4
+  highPrecisionCollision: 1
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  autoRespawnTrees: 1
+  terrainMinMaxHeight: {x: 0.34181976, y: 78.10535}
+  detailResolution: 2048
+  detailResolutionIndex: 4
+  grassPatchSize: 32
+  grassPatchSizeIndex: 2
+  tempColliders: []
+  waterHeight: 0
